@@ -18,7 +18,7 @@ jobs:
         run: |
           ./dummy-server.bin &
           sleep 3
-          curl -s http://localhost:8443
+          curl -s http://localhost:8888
           kill $!
       - name: Upload Artifact
         uses: actions/upload-artifact@v3
